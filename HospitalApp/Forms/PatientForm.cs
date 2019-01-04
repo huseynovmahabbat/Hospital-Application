@@ -64,9 +64,7 @@ namespace HospitalApp.Forms
             List<string> doctorNames = new List<string>();
             try
             {
-                if (cbmx_doctors.Items.Count > 0)
-                    cbmx_doctors.DataSource = null;
-  
+                
                 Patient currentPatient = (Patient)Session.GetValue("Patient");
 
                 using (HospitalDbContext db = new HospitalDbContext())
@@ -77,7 +75,7 @@ namespace HospitalApp.Forms
                   
                 }
    
-                cbmx_doctors.DataSource = doctorNames;
+                cbmx_doctors.DataSource = doctorNames; //
             }
             catch (SqlException ex)
             {
@@ -154,7 +152,7 @@ namespace HospitalApp.Forms
             try
             {
                 
-                    if (cbmx_doctors.SelectedIndex > 0)
+                    
                     {
                         Doctor selectedDoctor = doctors.FirstOrDefault(x => $"{x.Name} {x.Surname}".ToString() == cbmx_doctors.SelectedItem.ToString());
                         using (HospitalDbContext db = new HospitalDbContext())
@@ -201,8 +199,7 @@ namespace HospitalApp.Forms
 
         private void cbmx_doctors_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-                TimeControl();
+             TimeControl();
         }
 
         private void PatientForm_FormClosed(object sender, FormClosedEventArgs e)

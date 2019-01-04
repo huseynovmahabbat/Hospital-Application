@@ -54,7 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\HospitalDbContext.cs" />
-    <Compile Include="Extensions\FormExtensions.cs" />
     <Compile Include="Forms\DoctorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +135,8 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
