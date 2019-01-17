@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace HospitalApp.Models.ViewModels
 {
-   public class RegisterModel
+    public class RegisterModel
     {
         [Required]
         [StringLength(maximumLength:30,MinimumLength =3)]

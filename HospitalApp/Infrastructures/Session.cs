@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace HospitalApp.Infrastructures
 {
-   public static class Session
+    public static class Session
     {
         public static Dictionary<string,object> ValuePairs { get; set; }
         static Session()

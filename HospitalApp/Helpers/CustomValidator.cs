@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HospitalApp.Helpers
 {
-   public static class CustomValidator
+    public static class CustomValidator
     {
         public static bool TryValidateObject(object obj,Label label)
         {
